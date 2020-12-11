@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <title>Grid Columns</title>
+    <style>
+        .grid {
+            display: grid;
+            /*grid-template-columns: 200px 200px 200px;*/
+            /* This will always have 3 columns in every row...*/
+            /*grid-template-columns: 200px auto 200px;*/
+            /* Central box fits automatically in every row...*/
+            /*grid-template-columns: auto auto auto;*/
+            /* All boxes fit automatically in every row based on windoe size...*/
+            /*grid-template-columns: repeat(3, auto);*/
+            /* All boxes fit automatically in every row based on windoe size...*/
+            grid-template-columns: 1fr 3fr 1fr;
+            /* fr - Fraction 1:3:1 based on window size*/
+            grid-gap: 1rem;
+        }
+
+        .item {
+            padding: 3rem;
+            border: #ccc 1px solid;
+            background: #f4f4f4;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+
+    <main>
+        <section>
+            <h3>Welcome To My Site</h3>
+            <p>
+                As leader of the Uchiha, Fugaku was focused on the clan's interest and welfare and had a strong
+                sense of responsibility. His son, Sasuke, saw him as a strict man while he was seen as a
+                father-figure to the rest of the clan. As Itachi was his successor as head of the clan, Fugaku
+                spent much of his time focusing on the development of his eldest and little time with his
+                youngest, but was very very proud of both of em.
+            </p>
+        </section>
+        <aside>
+            <h3>Hello</h3>
+            <p>As leader of the Uchiha, Fugaku was focused on the clan's interest and welfare and had a strong
+                sense of responsibility. His son, Sasuke, saw him as a strict man while he was seen as a
+                father-figure to the rest of the clan.</p>
+        </aside>
+    </main>
+</body>
+
+</html>
