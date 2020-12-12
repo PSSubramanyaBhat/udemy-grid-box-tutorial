@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Grid Area</title>
+	<style>
+		.container {
+			display: grid;
+			grid-template-areas: 
+			'header header header'
+			'content content sidebar'
+			'box-1 box-2 box-3'
+			/* 'box-3 box-3 box-3' */
+			'footer footer footer';
+			grid-gap: 1rem;
+		}
+
+		.header {
+			grid-area: header;
+		}
+
+		.content {
+			grid-area: content;
+		}
+
+		.sidebar {
+			grid-area: sidebar;
+		}
+
+		.box-1{grid-area: box-1}
+		.box-2{grid-area: box-2}
+		.box-3{grid-area: box-3}
+
+		.footer {
+			grid-area: footer;
+			text-align: center;
+		}
+
+		.header, .content, .sidebar, 
+		.box-1, .box-2, .box-3, .footer {
+			border: 1px solid #ccc;
+			padding: 0.5rem;
+		}
+
+		@media(max-width: 500px) {
+			.container {
+				grid-template-areas: 
+				'header'
+				'content'
+				'sidebar'
+				'box-1'
+				'box-2' 
+				'box-3'
+				'footer';
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<h1>My Website</h1>
+		</header>
+		<section class="content">
+			<h3>Welcome To My Site</h3>
+			<p>
+				As leader of the Uchiha, Fugaku was focused on the clan's interest and welfare and had a strong
+                sense of responsibility. His son, Sasuke, saw him as a strict man while he was seen as a
+                father-figure to the rest of the clan. As Itachi was his successor as head of the clan, Fugaku
+                spent much of his time focusing on the development of his eldest and little time with his
+                youngest, but was very very proud of both of em. As leader of the Uchiha, Fugaku was focused on the clan's interest and welfare and had a strong
+                sense of responsibility. His son, Sasuke, saw him as a strict man while he was seen as a
+                father-figure to the rest of the clan. As Itachi was his successor as head of the clan, Fugaku
+                spent much of his time focusing on the development of his eldest and little time with his
+                youngest, but was very very proud of both of em.
+			</p>
+		</section>
+		<aside class="sidebar">
+			<h3>Contact Us</h3>
+			<ul>
+				<li>Some Company</li>
+				<li>50 Main st, Boston MA</li>
+				<li>something@something.com</li>
+				<li>555-555-5555</li>
+			</ul>
+		</aside>
+		<div class="box-1">
+			<h3>Heading</h3>
+			<p>
+				As leader of the Uchiha, Fugaku was focused on the clan's interest and welfare and had a strong
+                sense of responsibility. His son, Sasuke, saw him as a strict man while he was seen as a
+                father-figure to the rest of the clan. As Itachi was his successor as head of the clan, Fugaku
+                spent much of his time focusing on the development of his eldest and little time with his
+                youngest, but was very very proud of both of em. As leader of the Uchiha, Fugaku was focused on the clan's interest and welfare and had a strong
+                sense of responsibility. His son, Sasuke, saw him as a strict man while he was seen as a
+                father-figure to the rest of the clan. As Itachi was his successor as head of the clan, Fugaku
+                spent much of his time focusing on the development of his eldest and little time with his
+                youngest, but was very very proud of both of em.
+			</p>
+		</div>
+
+		<div class="box-2">
+			<h3>Heading</h3>
+			<p>
+				As leader of the Uchiha, Fugaku was focused on the clan's interest and welfare and had a strong
+                sense of responsibility. His son, Sasuke, saw him as a strict man while he was seen as a
+                father-figure to the rest of the clan. As Itachi was his successor as head of the clan, Fugaku
+                spent much of his time focusing on the development of his eldest and little time with his
+                youngest, but was very very proud of both of em. As leader of the Uchiha, Fugaku was focused on the clan's interest and welfare and had a strong
+                sense of responsibility. His son, Sasuke, saw him as a strict man while he was seen as a
+                father-figure to the rest of the clan. As Itachi was his successor as head of the clan, Fugaku
+                spent much of his time focusing on the development of his eldest and little time with his
+                youngest, but was very very proud of both of em.
+			</p>
+		</div>
+
+		<div class="box-3">
+			<h3>Heading</h3>
+			<p>
+				As leader of the Uchiha, Fugaku was focused on the clan's interest and welfare and had a strong
+                sense of responsibility. His son, Sasuke, saw him as a strict man while he was seen as a
+                father-figure to the rest of the clan. As Itachi was his successor as head of the clan, Fugaku
+                spent much of his time focusing on the development of his eldest and little time with his
+                youngest, but was very very proud of both of em. As leader of the Uchiha, Fugaku was focused on the clan's interest and welfare and had a strong
+                sense of responsibility. His son, Sasuke, saw him as a strict man while he was seen as a
+                father-figure to the rest of the clan. As Itachi was his successor as head of the clan, Fugaku
+                spent much of his time focusing on the development of his eldest and little time with his
+                youngest, but was very very proud of both of em.
+			</p>
+		</div>
+		<footer class="footer">
+			Copyright &copy; 2019
+		</footer>
+	</div>
+	</div>
+	</div>
+</body>
+</html>
